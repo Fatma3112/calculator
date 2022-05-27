@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <table id="result">
+            
+            <div>
+                <tr id="input">
+                <input id="input"></input>
+            </tr>
+       </div>
+       <div>
+             <tr id="output">
+                 <input id="output"></input>
+             </tr>
+            </div>
+        <div id="keyboard">
+            <tr>
+           <td><button id="ope" class="clearAll" onclick="clearResult()">C</button></td>
+           <td> <button id="ope" class="del" onclick="deletChar()">CE</button></td>
+           <td> <button id="ope" class="ope" onclick="number('%')">%</button></td>
+           <td> <button class="ope" id="ope" onclick="number('/')">/</button></td>
+        </tr>
+       <tr>
+        <td><button id="num" class="num" onclick="number('7')">7</button></td>
+        <td><button id="num" class="num"onclick="number('8')">8</button></td>
+        <td> <button class="num" id="num" onclick="number('9')">9</button></td>
+        <td> <button id="ope" class="ope"onclick="number('*')">X</button></td>
+    </tr>
+    <tr>
+        <td> <button id="num" class="num" onclick="number('4')">4</button></td>
+        <td> <button id="num" class="num" onclick="number('5')">5</button></td>
+        <td> <button class="num" id="num" onclick="number('6')">6</button></td>
+        <td>  <button id="ope" class="ope" onclick="number('-')">-</button></td>
+    </tr>
+    <tr>
+        <td> <button id="num" class="num" onclick="number('1')">1</button></td>
+        <td>  <button id="num" class="num" onclick="number('2')">2</button></td>
+        <td>  <button id="num" class="num" onclick="number('3')">3</button></td>
+        <td> <button class="ope" id="ope" onclick="number('+')">+</button></td>
+    </tr>
+    <tr>
+        <td>  <button id="empty" class="empty"></button></td>
+        <td>  <button id="ope" class="equal" onclick="result()">=</button></td>
+        <td> <button id="empty" class="empty"></button></td>
+        <td> <button class="ope" id="ope" onclick="number('.')">.</button></td>
+    </tr>
+
+
+        </div>
+      </table>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
